@@ -2,11 +2,30 @@
 
 /* Controllers */
 
-
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
-
-
-function MyCtrl2() {
+function TeamCtrl($scope, Teams)
+{
+	$scope.teams = Teams.query({}, function(teams){
+		$scope.teamSelect = teams[0].TeamId;
+	});
+	
+	$scope.getTeam = _getTeam;
+	
+	function _getTeam()
+	{
+		var teamId = this.teamSelect.valueOf();
+		for (var index in $scope.teams)
+		{
+			var item = $scope.teams[index];
+			if (item.TeamId == teamId)
+			{
+				$scope.team = item;
+				break;
+			}
+		}
+	}
 }
-MyCtrl2.$inject = [];
+
+function ConferenceCtrl($scope, Conference)
+{
+	$scope.value = Conference.query();
+}

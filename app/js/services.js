@@ -2,8 +2,31 @@
 
 /* Services */
 
+/**
+ * Create a service that will get the teams from a restful server.
+ */
+angular.module('teams.services', ['ngResource']).
+	factory('Teams', function($resource){
+		return $resource('data/teams.json', {}, {
+			query: {
+				method:'GET', 
+				params:{}, 
+				isArray:true, 
+				headers:{
+					'Range':'items=0-14',
+					'Content-Type': 'application/json'
+				}
+			}
+		});
+	});
 
-// Demonstrate how to register services
-// In this case it is a simple value service.
-angular.module('myApp.services', []).
-  value('version', '0.1');
+angular.module('conference.services', ['ngResource']).
+	factory('Conference', function($resource){
+		return $resource('data/conferences.php', {}, {
+			query: {
+				method: 'GET',
+				params: {},
+				isArray: true
+			}
+		});
+	});

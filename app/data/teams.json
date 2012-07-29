@@ -1,0 +1,12 @@
+[
+	{"TeamId":"1","TeamName":"Texas A&M Aggies","LeagueId":"1","ConferenceId":"1","DivisionId":"0"},
+	{"TeamId":"2","TeamName":"Southern Methodist Mustangs","LeagueId":"1","ConferenceId":"2","DivisionId":"0"},
+	{"TeamId":"3","TeamName":"Oklahoma Sooners","LeagueId":"1","ConferenceId":"1","DivisionId":"0"},
+	{"TeamId":"4","TeamName":"Tulsa Golden\u00a0Hurricane","LeagueId":"1","ConferenceId":"2","DivisionId":"0"},
+	{"TeamId":"5","TeamName":"Texas Longhorns","LeagueId":"1","ConferenceId":"1","DivisionId":"0"},
+	{"TeamId":"6","TeamName":"Rice Owls","LeagueId":"1","ConferenceId":"2","DivisionId":"0"},
+	{"TeamId":"7","TeamName":"Texas Tech Red\u00a0Raiders","LeagueId":"1","ConferenceId":"1","DivisionId":"0"},
+	{"TeamId":"8","TeamName":"Texas State Bobcats","LeagueId":"1","ConferenceId":"5","DivisionId":"0"},
+	{"TeamId":"9","TeamName":"Kansas Jayhawks","LeagueId":"1","ConferenceId":"1","DivisionId":"0"},
+	{"TeamId":"10","TeamName":"McNeese State Cowboys","LeagueId":"1","ConferenceId":"5","DivisionId":"0"}
+]

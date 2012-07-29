@@ -1,0 +1,7 @@
+<p>{{team | json}}</p>
+
+<select ng-change="getTeam()" ng-model="teamSelect">
+	<option ng-repeat="team in teams" value="{{team.TeamId}}">
+		{{team.TeamName}}
+	</option>
+</select>
