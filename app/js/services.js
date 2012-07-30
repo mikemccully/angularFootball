@@ -7,7 +7,7 @@
  */
 angular.module('teams.services', ['ngResource']).
 	factory('Teams', function($resource){
-		return $resource('data/teams.json', {}, {
+		return $resource('data/teams.php', {}, {
 			query: {
 				method:'GET', 
 				params:{}, 

@@ -1,1 +1,6 @@
-This is {{ value }}
+NCAA Conferences: (not all inclusive)
+<select ng-change="getTeams()" ng-model="conferenceSelect">
+	<option ng-repeat="conference in conferences" value="{{conference.ConferenceId}}">
+		{{conference.ConferenceName}}
+	</option>
+</select>

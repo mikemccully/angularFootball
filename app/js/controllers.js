@@ -5,7 +5,8 @@
 function TeamCtrl($scope, Teams)
 {
 	$scope.teams = Teams.query({}, function(teams){
-		$scope.teamSelect = teams[0].TeamId;
+		$scope.team = teams[0];
+		$scope.teamSelect = $scope.team.TeamId;
 	});
 	
 	$scope.getTeam = _getTeam;
@@ -27,5 +28,12 @@ function TeamCtrl($scope, Teams)
 
 function ConferenceCtrl($scope, Conference)
 {
-	$scope.value = Conference.query();
+	$scope.conferences = Conference.query();
+	$scope.getTeams = _getTeams;
+	
+	function _getTeams()
+	{
+		var conferenceId = this.conferenceSelect.valueOf()
+		alert("ConferenceId: " + conferenceId);
+	}
 }
